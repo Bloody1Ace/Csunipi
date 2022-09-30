@@ -1,5 +1,7 @@
 package com.example.csunipi;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -29,16 +31,97 @@ public class SecondFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.pms.setOnClickListener(new View.OnClickListener(){
+        binding.nea.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view){
+            public void onClick(View view) {
                 NavHostFragment.findNavController(SecondFragment.this)
                         .navigate((R.id.action_SecondFragment_to_nea));
             }
         });
 
 
-    };
+        binding.pms.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                Intent viewIntent =
+                        new Intent("android.intent.action.VIEW",
+                                Uri.parse("https://www.cs.unipi.gr/index.php?option=com_k2&view=item&layout=item&id=626&Itemid=815&lang=el"));
+                startActivity(viewIntent);
+            }
+
+        });
+
+        binding.psifiakos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                Intent viewIntent =
+                        new Intent("android.intent.action.VIEW",
+                                Uri.parse("https://www.cs.unipi.gr/index.php?option=com_k2&view=item&layout=item&id=576&Itemid=626&lang=el"));
+                startActivity(viewIntent);
+            }
+
+        });
+
+        binding.psifiakos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                Intent viewIntent =
+                        new Intent("android.intent.action.VIEW",
+                                Uri.parse("https://www.cs.unipi.gr/index.php?option=com_k2&view=item&layout=item&id=576&Itemid=626&lang=el"));
+                startActivity(viewIntent);
+            }
+
+        });
+
+        binding.kuvernoasfalia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                Intent viewIntent =
+                        new Intent("android.intent.action.VIEW",
+                                Uri.parse("https://www.cs.unipi.gr/index.php?option=com_k2&view=item&layout=item&id=609&Itemid=813&lang=el"));
+                startActivity(viewIntent);
+            }
+
+        });
+
+        binding.plhroforikh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                Intent viewIntent =
+                        new Intent("android.intent.action.VIEW",
+                                Uri.parse("https://www.cs.unipi.gr/index.php?option=com_k2&view=item&layout=item&id=61&Itemid=627&lang=el"));
+                startActivity(viewIntent);
+            }
+
+        });
+
+        binding.proggramma.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                Intent viewIntent =
+                        new Intent("android.intent.action.VIEW",
+                                Uri.parse("https://www.cs.unipi.gr/index.php?option=com_k2&view=item&layout=item&id=59&Itemid=494&lang=el"));
+                startActivity(viewIntent);
+            }
+
+        });
+
+        binding.grammateia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                Intent viewIntent =
+                        new Intent("android.intent.action.VIEW",
+                                Uri.parse("https://sso.unipi.gr/login?service=https%3A%2F%2Fsis-portal.unipi.gr%2Flogin%2Fcas"));
+                startActivity(viewIntent);
+            }
+
+        });
+
+
+
+
+    }
+
 
 
 
@@ -48,4 +131,4 @@ public class SecondFragment extends Fragment {
         binding = null;
     }
 
-}
+};

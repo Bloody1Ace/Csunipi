@@ -32,7 +32,9 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="-230dp">
 
 
         <LinearLayout
@@ -56,69 +58,82 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/psifiakos"
                 android:layout_width="322dp"
                 android:layout_height="134dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="30dp"
                 android:background="@drawable/icon2"
+                android:clickable="true"
                 android:orientation="horizontal"
                 android:padding="3dp">
 
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/kuvernoasfalia"
                 android:layout_width="322dp"
                 android:layout_height="134dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="30dp"
                 android:background="@drawable/icon3"
+                android:clickable="true"
                 android:orientation="horizontal"
                 android:padding="3dp">
 
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/plhroforikh"
                 android:layout_width="322dp"
                 android:layout_height="134dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="30dp"
                 android:background="@drawable/icon4"
+                android:clickable="true"
+                android:orientation="vertical"
                 android:padding="3dp">
 
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/proggramma"
                 android:layout_width="322dp"
                 android:layout_height="134dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="30dp"
                 android:background="@drawable/icon5"
+                android:clickable="true"
                 android:orientation="horizontal"
                 android:padding="3dp">
 
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/grammateia"
                 android:layout_width="322dp"
                 android:layout_height="134dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="30dp"
                 android:background="@drawable/icon6"
+                android:clickable="true"
                 android:orientation="horizontal"
                 android:padding="3dp">
 
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/nea"
                 android:layout_width="322dp"
-                android:layout_height="100dp"
+                android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="30dp"
                 android:background="@drawable/backround"
+                android:clickable="true"
                 android:orientation="horizontal"
                 android:padding="3dp">
+
                 <LinearLayout
-                    android:id="@+id/nea"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -131,30 +146,17 @@
                         android:text="Τελευταία νέα..."
                         android:textColor="@color/black"
                         android:textSize="18sp"
-                        android:textStyle="bold"/>
-
+                        android:textStyle="bold" />
 
 
                 </LinearLayout>
             </LinearLayout>
 
 
-
         </LinearLayout>
 
 
     </ScrollView>
-
-    <Button
-        android:id="@+id/button_second"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
-        android:text="@string/previous"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
