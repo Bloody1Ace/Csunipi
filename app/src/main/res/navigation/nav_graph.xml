@@ -14,6 +14,9 @@
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_melh"
+            app:destination="@id/melh" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -24,5 +27,21 @@
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_nea"
+            app:destination="@id/nea" />
+        <action
+            android:id="@+id/action_SecondFragment_to_nea2"
+            app:destination="@id/nea" />
     </fragment>
+    <fragment
+        android:id="@+id/nea"
+        android:name="com.example.csunipi.nea"
+        android:label="fragment_nea"
+        tools:layout="@layout/fragment_nea" />
+    <activity
+        android:id="@+id/melh"
+        android:name="com.example.csunipi.melh"
+        android:label="melh"
+        tools:layout="@layout/melh" />
 </navigation>

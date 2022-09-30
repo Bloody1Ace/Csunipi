@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SecondFragment">
+    tools:context=".melh">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -50,7 +50,7 @@
                         android:layout_below="@id/title1"
                         android:paddingTop="5dp"
                         android:paddingBottom="5dp"
-                        android:src="@drawable/mrsVirvou" />
+                        android:src="@drawable/mrsvirvou" />
 
                     <TextView
                         android:id="@+id/name1"
@@ -101,7 +101,7 @@
                         android:layout_below="@id/title2"
                         android:paddingTop="5dp"
                         android:paddingBottom="5dp"
-                        android:src="@drawable/mrVerg" />
+                        android:src="@drawable/mrverg" />
 
                     <TextView
                         android:id="@+id/name2"
@@ -152,7 +152,7 @@
                         android:layout_below="@id/title3"
                         android:paddingTop="5dp"
                         android:paddingBottom="5dp"
-                        android:src="@drawable/mrGihr" />
+                        android:src="@drawable/mrgihr" />
 
                     <TextView
                         android:id="@+id/name3"
@@ -203,7 +203,7 @@
                         android:layout_below="@id/title4"
                         android:paddingTop="5dp"
                         android:paddingBottom="5dp"
-                        android:src="@drawable/mrAlep" />
+                        android:src="@drawable/mralep" />
 
                     <TextView
                         android:id="@+id/name4"
@@ -254,7 +254,7 @@
                         android:layout_below="@id/title5"
                         android:paddingTop="5dp"
                         android:paddingBottom="5dp"
-                        android:src="@drawable/mrsChrys" />
+                        android:src="@drawable/mrschrys" />
 
                     <TextView
                         android:id="@+id/name5"

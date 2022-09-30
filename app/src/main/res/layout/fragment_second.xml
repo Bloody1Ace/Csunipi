@@ -42,13 +42,15 @@
             android:orientation="vertical">
 
             <LinearLayout
-            android:layout_width="322dp"
-            android:layout_height="134dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/pms1_icon"
-            android:orientation="horizontal"
-            android:padding="3dp">
+                android:id="@+id/pms"
+                android:layout_width="322dp"
+                android:layout_height="134dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/pms1_icon"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:padding="3dp">
 
 
             </LinearLayout>
@@ -112,10 +114,11 @@
                 android:layout_height="100dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="30dp"
-                android:background="@drawable/pms1"
+                android:background="@drawable/backround"
                 android:orientation="horizontal"
                 android:padding="3dp">
                 <LinearLayout
+                    android:id="@+id/nea"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
