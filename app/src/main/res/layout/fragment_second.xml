@@ -58,6 +58,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/psifiakos"
                 android:layout_width="322dp"
                 android:layout_height="134dp"
                 android:layout_gravity="center"
@@ -69,6 +70,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/kuvernoasfalia"
                 android:layout_width="322dp"
                 android:layout_height="134dp"
                 android:layout_gravity="center"
@@ -80,16 +82,19 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/plhroforikh"
                 android:layout_width="322dp"
                 android:layout_height="134dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="30dp"
                 android:background="@drawable/icon4"
-                android:padding="3dp">
+                android:padding="3dp"
+                android:orientation="horizontal">
 
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/proggramma"
                 android:layout_width="322dp"
                 android:layout_height="134dp"
                 android:layout_gravity="center"
@@ -101,6 +106,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/grammateia"
                 android:layout_width="322dp"
                 android:layout_height="134dp"
                 android:layout_gravity="center"

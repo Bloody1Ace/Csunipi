@@ -2,60 +2,79 @@ package com.example.csunipi;
 
 import android.os.Bundle;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.ui.AppBarConfiguration;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link nea#newInstance} factory method to
- * create an instance of this fragment.
- */
+import com.example.csunipi.databinding.ActivityMainBinding;
+
+import java.util.ArrayList;
+
+
 public class nea extends Fragment {
+    private AppBarConfiguration appBarConfiguration;
+    private ActivityMainBinding binding;
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    private ArrayList<CategModal> categoriesModalArrayList;
+    private ArrayList<NewsModal> new1, new2, new3;
+    private RecyclerView catRV;
 
     public nea() {
-        // Required empty public constructor
+
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment nea.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static nea newInstance(String param1, String param2) {
-        nea fragment = new nea();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
+        AppCompatActivity test = new AppCompatActivity();
+        test.setContentView(R.layout.news);
+        catRV = test.findViewById(R.id.idRVNewsCategories);
+        categoriesModalArrayList = new ArrayList<>();
+
+        // popular news array list.
+        new1 = new ArrayList<>();
+        new1.add(new NewsModal("Ανακοίνωση για τις αναβληθείσες εξετάσεις της Τετάρτης 21 Σεπτεμβρίου 2022 ", " Download attachments: attachment.pdf\n" +
+                "\n" +
+                "    Έγγραφο ανακοίνωσης (179 Downloads) \n" +
+                "\n"));
+
+        categoriesModalArrayList.add(new CategModal("First", new1));
+
+
+        new2 = new ArrayList<>();
+        new2.add(new NewsModal("Σίτιση φοιτητών/τριών Ακαδημαϊκού Έτους 2022-2023",
+                "Αιτήσεις από 25 Αυγούστου 2022 έως 29 Σεπτεμβρίου 2022\n" +
+
+                        "Οδηγίες για την ηλεκτρονική υποβολή αίτησης για σίτιση..\n"));
+
+        // on below line we are creating our second category.
+        categoriesModalArrayList.add(new CategModal("Second", new2));
+
+        // technology news.
+        new3 = new ArrayList<>();
+        new3.add(new NewsModal("Υποτροφίες ακαδ. έτους 2022-2023 για σπουδές στο Μεξικό", " Download attachments: attachment.pdf\n"));
+
+        // on below line we are adding our third category.
+        categoriesModalArrayList.add(new CategModal("Technology", new3));
+
+        // on below line we are setting layout manager to our recycler view.
+        catRV.setLayoutManager(new LinearLayoutManager(test));
+
+        // on below line we  are creating and setting adapter to our recycler view.
+        CategoriesRVAdapter adapter = new CategoriesRVAdapter(categoriesModalArrayList, test);
+        catRV.setAdapter(adapter);
     }
 
+
     @Override
+
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment

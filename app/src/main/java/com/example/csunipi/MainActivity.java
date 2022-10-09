@@ -39,12 +39,12 @@ public class MainActivity extends AppCompatActivity {
         appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
 
-        Spinner mySpinner = (Spinner) findViewById(R.id.spinner1);
-
-        ArrayAdapter<String> myAdapter = new ArrayAdapter<String>(MainActivity.this,
-                android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.names));
-        myAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        mySpinner.setAdapter(myAdapter);
+//        Spinner mySpinner = (Spinner) findViewById(R.id.spinner1);
+//
+//        ArrayAdapter<String> myAdapter = new ArrayAdapter<String>(MainActivity.this,
+//                android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.names));
+//        myAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+//        mySpinner.setAdapter(myAdapter);
 
         binding.fab.setOnClickListener(new View.OnClickListener() {
 
@@ -55,42 +55,42 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        setContentView(R.layout.news);
-        catRV = findViewById(R.id.idRVNewsCategories);
-        categoriesModalArrayList = new ArrayList<>();
-
-        // popular news array list.
-        new1 = new ArrayList<>();
-        new1.add(new NewsModal("Ανακοίνωση για τις αναβληθείσες εξετάσεις της Τετάρτης 21 Σεπτεμβρίου 2022 ", " Download attachments: attachment.pdf\n" +
-                "\n" +
-                "    Έγγραφο ανακοίνωσης (179 Downloads) \n" +
-                "\n"));
-
-        categoriesModalArrayList.add(new CategModal("First", new1));
-
-
-        new2 = new ArrayList<>();
-        new2.add(new NewsModal("Σίτιση φοιτητών/τριών Ακαδημαϊκού Έτους 2022-2023",
-                "Αιτήσεις από 25 Αυγούστου 2022 έως 29 Σεπτεμβρίου 2022\n" +
-
-                        "Οδηγίες για την ηλεκτρονική υποβολή αίτησης για σίτιση..\n"));
-
-        // on below line we are creating our second category.
-        categoriesModalArrayList.add(new CategModal("Second", new2));
-
-        // technology news.
-        new3 = new ArrayList<>();
-        new3.add(new NewsModal("Υποτροφίες ακαδ. έτους 2022-2023 για σπουδές στο Μεξικό", " Download attachments: attachment.pdf\n"));
-
-        // on below line we are adding our third category.
-        categoriesModalArrayList.add(new CategModal("Technology", new3));
-
-        // on below line we are setting layout manager to our recycler view.
-        catRV.setLayoutManager(new LinearLayoutManager(this));
-
-        // on below line we  are creating and setting adapter to our recycler view.
-        CategoriesRVAdapter adapter = new CategoriesRVAdapter(categoriesModalArrayList, this);
-        catRV.setAdapter(adapter);
+//        setContentView(R.layout.news);
+//        catRV = findViewById(R.id.idRVNewsCategories);
+//        categoriesModalArrayList = new ArrayList<>();
+//
+//        // popular news array list.
+//        new1 = new ArrayList<>();
+//        new1.add(new NewsModal("Ανακοίνωση για τις αναβληθείσες εξετάσεις της Τετάρτης 21 Σεπτεμβρίου 2022 ", " Download attachments: attachment.pdf\n" +
+//                "\n" +
+//                "    Έγγραφο ανακοίνωσης (179 Downloads) \n" +
+//                "\n"));
+//
+//        categoriesModalArrayList.add(new CategModal("First", new1));
+//
+//
+//        new2 = new ArrayList<>();
+//        new2.add(new NewsModal("Σίτιση φοιτητών/τριών Ακαδημαϊκού Έτους 2022-2023",
+//                "Αιτήσεις από 25 Αυγούστου 2022 έως 29 Σεπτεμβρίου 2022\n" +
+//
+//                        "Οδηγίες για την ηλεκτρονική υποβολή αίτησης για σίτιση..\n"));
+//
+//        // on below line we are creating our second category.
+//        categoriesModalArrayList.add(new CategModal("Second", new2));
+//
+//        // technology news.
+//        new3 = new ArrayList<>();
+//        new3.add(new NewsModal("Υποτροφίες ακαδ. έτους 2022-2023 για σπουδές στο Μεξικό", " Download attachments: attachment.pdf\n"));
+//
+//        // on below line we are adding our third category.
+//        categoriesModalArrayList.add(new CategModal("Technology", new3));
+//
+//        // on below line we are setting layout manager to our recycler view.
+//        catRV.setLayoutManager(new LinearLayoutManager(this));
+//
+//        // on below line we  are creating and setting adapter to our recycler view.
+//        CategoriesRVAdapter adapter = new CategoriesRVAdapter(categoriesModalArrayList, this);
+//        catRV.setAdapter(adapter);
 
 
 
