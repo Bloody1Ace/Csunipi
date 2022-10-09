@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FirstFragment">
+    tools:context=".FirstFragment"
+    android:background="@color/blue_back">
 
 
     <Button
@@ -13,6 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="111dp"
         android:text="@string/news"
+        android:background="@color/button_color"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/spinner1" />

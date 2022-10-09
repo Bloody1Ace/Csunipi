@@ -3,12 +3,14 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="@color/blue_back">
+
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/backround">
+        android:background="@color/blue_back">
 
         <TextView
             android:id="@+id/news_title"
@@ -19,9 +21,9 @@
             android:padding="4dp"
             android:text="News Title"
             android:textAllCaps="false"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:gravity="center"
-            android:background="@drawable/backround"
+            android:background="@color/blue_back"
             android:textStyle="bold" />
 
         <TextView
@@ -33,7 +35,7 @@
             android:layout_marginTop="4dp"
             android:padding="4dp"
             android:text="News Desc"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="16sp" />
 
     </RelativeLayout>

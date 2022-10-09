@@ -5,7 +5,8 @@
     android:id="@+id/idRLView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NewsHandler">
+    tools:context=".NewsHandler"
+    android:background="@color/blue_back">
 
     <!--recycler view for displaying news categories. -->
     <androidx.recyclerview.widget.RecyclerView

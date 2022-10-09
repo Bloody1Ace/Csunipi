@@ -19,7 +19,7 @@
             android:layout_gravity="top"
             android:layout_marginTop="40dp"
             android:layout_marginBottom="10dp"
-            android:background="@color/teal_700"
+            android:background="@color/blue_back"
             android:orientation="horizontal">
 
             <LinearLayout
@@ -39,7 +39,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:text="Πρόεδρος Τμήματος"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
@@ -62,7 +62,7 @@
                         android:layout_toRightOf="@id/image1"
                         android:gravity="center_vertical|right"
                         android:text="Μαρία Βίρβου"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:textSize="14sp"
                         android:textStyle="bold"
                         tools:ignore="RtlHardcoded" />
@@ -75,7 +75,7 @@
                         android:layout_marginTop="83dp"
                         android:layout_toEndOf="@+id/image1"
                         android:text="507, κεντρικό κτίριο -\n +302104142269"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:textSize="12sp" />
                 </RelativeLayout>
 
@@ -90,7 +90,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:text="Αναπληρωτής Πρόεδρος Τμήματος"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
@@ -113,7 +113,7 @@
                         android:layout_toRightOf="@id/image2"
                         android:gravity="center_vertical|right"
                         android:text="Βέργαδος Δημήτριος "
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:textSize="14sp"
                         android:textStyle="bold"
                         tools:ignore="RtlHardcoded" />
@@ -126,7 +126,7 @@
                         android:layout_marginTop="83dp"
                         android:layout_toEndOf="@+id/image2"
                         android:text="104, Γ. Λαμπράκη 126 -\n +302104142479"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:textSize="12sp" />
                 </RelativeLayout>
 
@@ -141,7 +141,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:text="Καθηγητές"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
@@ -164,7 +164,7 @@
                         android:layout_toRightOf="@id/image3"
                         android:gravity="center_vertical|right"
                         android:text="Τσιχριντζής Γεώργιος"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:textSize="14sp"
                         android:textStyle="bold"
                         tools:ignore="RtlHardcoded" />
@@ -177,7 +177,7 @@
                         android:layout_marginTop="83dp"
                         android:layout_toEndOf="@+id/image3"
                         android:text="302, κεντρικό κτίριο -\n+302104142322"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:textSize="12sp" />
                 </RelativeLayout>
 
@@ -192,7 +192,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:text="Αναπληρωτές Καθηγητές"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
@@ -215,7 +215,7 @@
                         android:layout_toRightOf="@id/image4"
                         android:gravity="center_vertical|right"
                         android:text="Αλέπης Ευθύμιος"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:textSize="14sp"
                         android:textStyle="bold"
                         tools:ignore="RtlHardcoded" />
@@ -228,7 +228,7 @@
                         android:layout_marginTop="83dp"
                         android:layout_toEndOf="@+id/image4"
                         android:text="540, κεντρικό κτίριο"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:textSize="12sp" />
                 </RelativeLayout>
 
@@ -243,7 +243,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:text="Αναπληρωτές Καθηγητές"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
@@ -266,7 +266,7 @@
                         android:layout_toRightOf="@id/image5"
                         android:gravity="center_vertical|right"
                         android:text="Χρυσαφιάδη Κωνσταντίνα"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:textSize="14sp"
                         android:textStyle="bold"
                         tools:ignore="RtlHardcoded" />
@@ -279,7 +279,7 @@
                         android:layout_marginTop="83dp"
                         android:layout_toEndOf="@+id/image5"
                         android:text="207, κεντρικό κτίριο -\n +302104142131"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         android:textSize="12sp" />
                 </RelativeLayout>
 
