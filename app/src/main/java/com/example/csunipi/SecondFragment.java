@@ -31,13 +31,13 @@ public class SecondFragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.neanea.setOnClickListener(new View.OnClickListener() {
+        binding.nea.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
                 Intent viewIntent =
                         new Intent("android.intent.action.VIEW",
                                 Uri.parse("https://www.cs.unipi.gr/index.php?option=com_k2&view=itemlist&layout=category&task=category&id=16&Itemid=673&lang=el"));
-                        startActivity(viewIntent);
+                startActivity(viewIntent);
             }
         });
 
